@@ -1,0 +1,15 @@
+@import "_values", "_fst-menu";
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 auto;
+    list-style-type: none;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto 120px auto;
+}

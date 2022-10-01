@@ -1,0 +1,88 @@
+ol {
+  padding-left: 0;
+}
+
+[class*=postavshik] {
+  padding: 15px;
+}
+
+.first-menu .container {
+  margin-top: 109px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.imgbc {
+  position: absolute;
+  width: 832px;
+  height: 787px;
+  right: 0px;
+  top: 0px;
+  background-color: #0B7572;
+  z-index: -1000;
+}
+
+.postavshik {
+  width: 610px;
+}
+.postavshik h2 {
+  font-size: 52px;
+}
+.postavshik p {
+  line-height: 24px;
+}
+.postavshik ol {
+  font-weight: 700;
+  border-bottom: 3px solid #FFCE50;
+  width: 108px;
+}
+.postavshik ol:hover {
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.postavshik-menu {
+  width: 1240px;
+  height: 345px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.199);
+}
+.postavshik-menu .postavshik-menu h4, .postavshik-menu p {
+  text-align: left;
+}
+.postavshik-menu h4 {
+  font-size: 20px;
+}
+.postavshik-menu .pm-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 92px;
+  background-color: rgba(202, 200, 200, 0.678);
+  border-radius: 50%;
+}
+.postavshik-menu .p1-menu, .postavshik-menu .p2-menu, .postavshik-menu .p3-menu {
+  width: 228px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto 120px auto;
+}/*# sourceMappingURL=style.css.map */
