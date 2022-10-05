@@ -1,4 +1,4 @@
-@import "_values", "_fst-menu";
+@import "_values", "_fst-menu","scn-menu";
 
 *{
     box-sizing: border-box;
@@ -12,4 +12,21 @@ body{
 .container{
     width: 1440px;
     margin: 0 auto 120px auto;
+    padding: 0 100px ;
+}
+
+@media (max-width:769px) {
+    .container{
+        width: 768px;
+        margin: 0 auto 120px auto;
+        padding: 0 39px ;
+    }
+}
+
+@media (max-width:375px) {
+    .container{
+        width: 375px;
+        margin: 0 auto 120px auto;
+        padding: 0 15px ;
+    }
 }
