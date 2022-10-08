@@ -1,4 +1,173 @@
 .second-menu .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.sphere{
+margin-bottom: 40px;
+width: 687px;
+h2{
+    font-size: 48px;
+    line-height: 60px;
+    margin: 32px 0;
+}
+}
+
+.pick-sphere{
+    display: flex;
+    flex-direction: column;
+    width: 687px;
+    .click-sphere{
+        display: flex;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 16px;
+        .sphere-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height:75px;
+            button{
+                width: 24px;
+                height: 24px;
+                border-radius: 50% ;
+                border: none;
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            button:hover{
+                cursor: pointer;
+                div{
+                    width: 10px;
+                    height: 10px;
+                    background-color: green;
+                    border-radius: 50% ;
+                } 
+                button:hover ~ .click-sphere{
+                    background-color: green;
+                }
+            }
+        }  
+        .text-sphere{
+            width: 100%;
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.vote-sphere{
+    height: 100%;
+    border-bottom: 3px solid #FFCE50 ;
+    ol{
+        font-weight: bold;
+        font-size: 20px;
+        margin: 8px 0;
+    }
+    li{
+        font-size: 20px;
+        span{
+            font-size: 54px;
+            font-weight:bold;
+            line-height: 81px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:769px) {
+    .second-menu .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .pick-sphere{
+        display: flex;
+        flex-direction: column;
+        width: 687px;
+        .click-sphere{
+            display: flex;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 16px;
+            .sphere-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height:75px;
+                button{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50% ;
+                    border: none;
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                button:hover{
+                    cursor: pointer;
+                    div{
+                        width: 10px;
+                        height: 10px;
+                        background-color: green;
+                        border-radius: 50% ;
+                    } 
+                    button:hover ~ .click-sphere{
+                        background-color: green;
+                    }
+                }
+            }  
+            .text-sphere{
+                width: 100%;
+                h4{
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .vote-sphere{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:375px) {
+    .sphere{
+        p{
+            display: none;
+        }
+        h2{
+            font-size: 28px;
+            line-height: 35px;
+        }
+    }
+    .pick-sphere{
+        .click-sphere{
+            padding: 10px;
+            margin-bottom: 10px;
+            .sphere-btn{
+                width: 80px;
+                height:85px;
+            }
+        }
+    }
+    
 }

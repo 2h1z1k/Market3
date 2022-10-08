@@ -263,8 +263,311 @@ ol {
 .second-menu .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.sphere {
+  margin-bottom: 40px;
+  width: 687px;
+}
+.sphere h2 {
+  font-size: 48px;
+  line-height: 60px;
+  margin: 32px 0;
+}
+
+.pick-sphere {
+  display: flex;
+  flex-direction: column;
+  width: 687px;
+}
+.pick-sphere .click-sphere {
+  display: flex;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.pick-sphere .click-sphere .sphere-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 75px;
+}
+.pick-sphere .click-sphere .sphere-btn button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pick-sphere .click-sphere .sphere-btn button:hover {
+  cursor: pointer;
+}
+.pick-sphere .click-sphere .sphere-btn button:hover div {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.pick-sphere .click-sphere .sphere-btn button:hover button:hover ~ .click-sphere {
+  background-color: green;
+}
+.pick-sphere .click-sphere .text-sphere {
+  width: 100%;
+}
+.pick-sphere .click-sphere .text-sphere h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.vote-sphere {
+  height: 100%;
+  border-bottom: 3px solid #FFCE50;
+}
+.vote-sphere ol {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 8px 0;
+}
+.vote-sphere li {
+  font-size: 20px;
+}
+.vote-sphere li span {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 81px;
+}
+
+@media (max-width: 769px) {
+  .second-menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pick-sphere {
+    display: flex;
+    flex-direction: column;
+    width: 687px;
+  }
+  .pick-sphere .click-sphere {
+    display: flex;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .pick-sphere .click-sphere .sphere-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 75px;
+  }
+  .pick-sphere .click-sphere .sphere-btn button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pick-sphere .click-sphere .sphere-btn button:hover {
+    cursor: pointer;
+  }
+  .pick-sphere .click-sphere .sphere-btn button:hover div {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+  }
+  .pick-sphere .click-sphere .sphere-btn button:hover button:hover ~ .click-sphere {
+    background-color: green;
+  }
+  .pick-sphere .click-sphere .text-sphere {
+    width: 100%;
+  }
+  .pick-sphere .click-sphere .text-sphere h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .vote-sphere {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .sphere p {
+    display: none;
+  }
+  .sphere h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .pick-sphere .click-sphere {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .pick-sphere .click-sphere .sphere-btn {
+    width: 80px;
+    height: 85px;
+  }
+}
+.third-menu .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.whyus-logo {
+  background-image: url(img/Track-whyus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 449px;
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.whyus-logo h2 {
+  color: white;
+  width: auto;
+  font-size: 48px;
+  line-height: 60px;
+  width: 362px;
+  margin-left: 101px;
+  padding-top: 160px;
+}
+
+.whyus-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.whyus-menu .whyus-undmenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  width: 620px;
+}
+.whyus-menu .whyus-undmenu .whyus-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background-color: rgba(202, 200, 200, 0.678);
+  border-radius: 50%;
+}
+.whyus-menu .whyus-undmenu .wmenu-text {
+  width: 300px;
+}
+
+@media (max-width: 769px) {
+  third-menu .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .whyus-logo {
+    background-image: url(img/Track-whyus-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 383px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .whyus-logo h2 {
+    color: white;
+    width: 362px;
+    margin-left: 40px;
+    margin-top: 0px;
+    padding-top: 130px;
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .whyus-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .whyus-menu .whyus-undmenu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    width: 620px;
+  }
+  .whyus-menu .whyus-undmenu .whyus-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: rgba(202, 200, 200, 0.678);
+    border-radius: 50%;
+  }
+  .whyus-menu .whyus-undmenu .wmenu-text {
+    width: 300px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .whyus-logo {
+    background-image: none;
+    background-repeat: none;
+    background-position: none;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .whyus-logo h2 {
+    color: black;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: left;
+  }
+  .whyus-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .whyus-menu .whyus-undmenu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    width: auto;
+  }
+  .whyus-menu .whyus-undmenu .whyus-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    margin: 0px;
+    margin-top: 25px;
+    background-color: rgba(202, 200, 200, 0.678);
+    border-radius: 50%;
+  }
+  .whyus-menu .whyus-undmenu .whyus-img img {
+    width: 29px;
+    height: 29px;
+  }
+  .whyus-menu .whyus-undmenu .wmenu-text {
+    width: 277px;
+    margin-left: 16px;
+  }
+  .whyus-menu .whyus-undmenu .wmenu-text h2 {
+    font-size: 18px;
+  }
+}
 * {
   box-sizing: border-box;
 }

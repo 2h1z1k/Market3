@@ -1,0 +1,158 @@
+.third-menu .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.whyus-logo{
+    background-image: url(img/Track-whyus.png);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 449px;
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    h2{
+        color: white;
+        width: auto;
+        font-size: 48px;
+        line-height: 60px;
+        width: 362px;
+        margin-left: 101px;
+        padding-top: 160px;
+    }
+}
+
+.whyus-menu{
+    display: flex;
+    flex-wrap: wrap;
+    .whyus-undmenu{
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+        width: 620px;
+        .whyus-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            background-color: rgba(202, 200, 200, 0.678);
+            border-radius: 50%;
+        }
+        .wmenu-text{
+            width: 300px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:769px) {
+    third-menu .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .whyus-logo{
+        background-image: url(img/Track-whyus-tablet.png);
+        background-repeat: no-repeat; 
+        background-position: center; 
+        height: 383px;  
+        width: auto; 
+        margin-bottom: 50px;
+        h2{
+            color: white;
+            width: 362px;
+            margin-left: 40px;
+            margin-top: 0px;
+            padding-top: 130px;
+            font-size: 44px;
+            line-height: 55px;
+        }
+    }
+    
+    .whyus-menu{
+        display: flex;
+        flex-wrap: wrap;
+        .whyus-undmenu{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px 0px;
+            width: 620px;
+            .whyus-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                margin: 20px;
+                background-color: rgba(202, 200, 200, 0.678);
+                border-radius: 50%;
+            }
+            .wmenu-text{
+                width: 300px;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:375px) {
+    
+    .whyus-logo{
+        background-image: none;
+        background-repeat: none; 
+        background-position: none; 
+        height: auto;   
+        margin-bottom: 50px;
+        h2{
+            color: black;
+            width: 200px;
+            margin-left: 15px;
+            margin-top: 0px;
+            padding-top: 0px;
+            font-size: 28px;
+            line-height: 35px;
+            text-align: left;
+        }
+    }
+    
+    .whyus-menu{
+        display: flex;
+        flex-wrap: wrap;
+        .whyus-undmenu{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px 0px;
+            width: auto;
+            .whyus-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 52px;
+                height: 52px;
+                margin: 0px;
+                margin-top: 25px;
+                background-color: rgba(202, 200, 200, 0.678);
+                border-radius: 50%;
+                img{
+                    width: 29px;
+                    height: 29px;
+                }
+            }
+            .wmenu-text{
+                width: 277px;
+                margin-left: 16px;
+                h2{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+}
