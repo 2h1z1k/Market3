@@ -41,18 +41,6 @@ h2{
                 align-items: center;
                 justify-content: center;
             }
-            button:hover{
-                cursor: pointer;
-                div{
-                    width: 10px;
-                    height: 10px;
-                    background-color: green;
-                    border-radius: 50% ;
-                } 
-                button:hover ~ .click-sphere{
-                    background-color: green;
-                }
-            }
         }  
         .text-sphere{
             width: 100%;
@@ -62,6 +50,19 @@ h2{
                 line-height: 30px;
             }
         }
+    }
+    .click-sphere:hover{
+        border: 1px solid #0B7572;
+        button{
+            cursor: pointer;
+            div{
+                width: 10px;
+                height: 10px;
+                background-color: green;
+                border-radius: 50% ;
+            } 
+        }
+        cursor: pointer;
     }
 }
 .vote-sphere{
