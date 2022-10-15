@@ -1,0 +1,74 @@
+.eleven-menu {
+    h1 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 125%;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+        margin-bottom: 16px;
+    }
+    .data_container {
+        background: #f9f9fb;
+        border-radius: 5px;
+        padding: 56px;
+        .image_box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 80px;
+            img {
+                margin-bottom: 16px;
+            }
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-decoration-line: underline;
+                color: #363738;
+            }
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #363738;
+            margin-bottom: 40px;
+        }
+        .file {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-decoration-line: underline;
+                color: #363738;
+            }
+        }
+    }
+    button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #0b7572;
+        border-radius: 4px;
+        color: #fff;
+        padding: 10px 20px;
+        border: 1px solid #0b7572;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #0b7572;
+    }
+}

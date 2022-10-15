@@ -1,0 +1,66 @@
+.ten-menu .contacts_us_con {
+    background-image: url(img/contactus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .application {
+        width: 700px;
+        height: 730px;
+        background: #0b7572;
+        padding: 56px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            color: #ffffff;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: space-between;
+
+            li {
+                width: 579px;
+                height: 0px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                padding-bottom: 50px;
+                list-style: none;
+                color: #fff;
+            }
+
+            .space {
+                padding-bottom: 20px;
+                padding-top: 50px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 28px;
+                }
+            }
+        }
+        button {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #0b7572;
+            margin-top: 60px;
+            padding: 10px 20px;
+            border: none;
+            
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #0b7572;
+            color: white;
+        }
+    }
+}
